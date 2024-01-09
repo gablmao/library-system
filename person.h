@@ -3,19 +3,30 @@
 #include <string>
 #include <vector>
 
+using namespace std;
+
+/*
+TO DO:
+- add Date class
+- add functions for each class
+- fukcing idk bro
+*/
+
+
+
 class Person {
     private:
-        std::string name;
-        std::string address;
-        std::string email;
+        string name;
+        string address;
+        string email;
 
     public:
-        std::string getName();
-        void setName(std::string name);
-        std::string getAddress();
-        void setAddress(std::string address);
-        std::string getEmail();
-        void setEmail(std::string email);
+        string getName();
+        void setName(string name);
+        string getAddress();
+        void setAddress(string address);
+        string getEmail();
+        void setEmail(string email);
 };
 
 class Librarian : public Person {
@@ -24,31 +35,31 @@ class Librarian : public Person {
         int salary;
 
     public:
-        Librarian(int staffID, std::string name, std::string address,
-        std::string email, int salary);
+        Librarian(int staffID, string name, string address,
+        string email, int salary);
         void addMember();
-        void issueBook(int memberID);
-        void returnBook();
-        void displayBorrowedBooks();
-        void calcFine();
+        void issueBook(int memberID, int bookID);
+        void returnBook(int memberID, int bookID);
+        void displayBorrowedBooks(int memberID);
+        void calcFine(int memberID);
         int getStaffID();
-        void setStaffID();
+        void setStaffID(int staffID);
         int getSalary();
-        void setSalary();
+        void setSalary(int salary);
 };
 
 
 class Member : public Person {
     private:
         int memberID;
-        std::vector<std::string> booksLoaned;
+        vector<Book> booksLoaned;
 
     public:
-        Member(int memberID, std::string name, std::string address,
-        std::string email);
+        Member(int memberID, string name, string address,
+        string email);
         int getMemberID();
-        std::vector<std::string> getBooksBorrowed();
-        void setBooksBorrowed();
+        vector<Book> getBooksBorrowed();
+        void setBooksBorrowed(Book book);
 
 };
 
@@ -56,11 +67,22 @@ class Member : public Person {
 class Book : public Librarian, public Member {
     private:
         int bookID;
-        std::string bookName;
-        std::string authorFirstName;
-        std::string authorLastName;
-        std::string bookType;
+        string bookName;
+        string authorFirstName;
+        string authorLastName;
+        string bookType;
         Member borrower;
+
+    public:
+        Book(int bookID, string bookName, string authorFirstName,
+        string authorLastName);
+        int getBookID();
+        string getBookName();
+        string getAuthorFirstName();
+        string getAuthorLastName();
+        void setDueDate();
+        void returnBook();
+        void borrowBook(Member borrower);
 };
 
 #endif
