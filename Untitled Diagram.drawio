@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-01-09T15:58:50.047Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="cT2iu20enVf5dXvdT4it" version="22.1.17" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-09T16:04:17.699Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="J1T0sz6pGNgv5y72eqLk" version="22.1.17" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1366" dy="735" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="450" dy="733" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -9,23 +9,23 @@
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="KInDUYm-OsFGC1iO8CIL-7" value="Brief Description: " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KInDUYm-OsFGC1iO8CIL-6">
-          <mxGeometry y="26" width="370" height="26" as="geometry" />
+        <mxCell id="KInDUYm-OsFGC1iO8CIL-7" value="Brief Description: Librarian creates a new member, display member &#xa;details" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KInDUYm-OsFGC1iO8CIL-6">
+          <mxGeometry y="26" width="370" height="54" as="geometry" />
         </mxCell>
-        <mxCell id="KInDUYm-OsFGC1iO8CIL-8" value="Primary Actors: " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="KInDUYm-OsFGC1iO8CIL-6">
-          <mxGeometry y="52" width="370" height="26" as="geometry" />
+        <mxCell id="KInDUYm-OsFGC1iO8CIL-8" value="Primary Actor: Librarian&#xa;Secondary Actor: Member" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="KInDUYm-OsFGC1iO8CIL-6">
+          <mxGeometry y="80" width="370" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="KInDUYm-OsFGC1iO8CIL-9" value="Preconditions: " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="KInDUYm-OsFGC1iO8CIL-6">
-          <mxGeometry y="78" width="370" height="26" as="geometry" />
+        <mxCell id="KInDUYm-OsFGC1iO8CIL-9" value="Preconditions: Member doesn&#39;t already exist in the database,&#xa;details are a 1-1 copy. Else member can be created." style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="KInDUYm-OsFGC1iO8CIL-6">
+          <mxGeometry y="120" width="370" height="40" as="geometry" />
         </mxCell>
         <mxCell id="KInDUYm-OsFGC1iO8CIL-11" value="Main Flow: " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KInDUYm-OsFGC1iO8CIL-6">
-          <mxGeometry y="104" width="370" height="26" as="geometry" />
+          <mxGeometry y="160" width="370" height="70" as="geometry" />
         </mxCell>
         <mxCell id="KInDUYm-OsFGC1iO8CIL-24" value="Post Conditions:" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KInDUYm-OsFGC1iO8CIL-6">
-          <mxGeometry y="130" width="370" height="26" as="geometry" />
+          <mxGeometry y="230" width="370" height="26" as="geometry" />
         </mxCell>
         <mxCell id="KInDUYm-OsFGC1iO8CIL-25" value="Alternate Flow:" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KInDUYm-OsFGC1iO8CIL-6">
-          <mxGeometry y="156" width="370" height="26" as="geometry" />
+          <mxGeometry y="256" width="370" height="26" as="geometry" />
         </mxCell>
         <mxCell id="KInDUYm-OsFGC1iO8CIL-12" value="Librarian" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="10" y="260" width="30" height="60" as="geometry" />
