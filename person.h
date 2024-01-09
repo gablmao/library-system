@@ -24,7 +24,17 @@ class Librarian : public Person {
         int salary;
 
     public:
-
+        Librarian(int staffID, std::string name, std::string address,
+        std::string email, int salary);
+        void addMember();
+        void issueBook(int memberID);
+        void returnBook();
+        void displayBorrowedBooks();
+        void calcFine();
+        int getStaffID();
+        void setStaffID();
+        int getSalary();
+        void setSalary();
 };
 
 
@@ -33,11 +43,24 @@ class Member : public Person {
         int memberID;
         std::vector<std::string> booksLoaned;
 
+    public:
+        Member(int memberID, std::string name, std::string address,
+        std::string email);
+        int getMemberID();
+        std::vector<std::string> getBooksBorrowed();
+        void setBooksBorrowed();
 
 };
 
 
-
-
+class Book : public Librarian, public Member {
+    private:
+        int bookID;
+        std::string bookName;
+        std::string authorFirstName;
+        std::string authorLastName;
+        std::string bookType;
+        Member borrower;
+};
 
 #endif
