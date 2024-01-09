@@ -1,6 +1,7 @@
 #ifndef _PERSON_H_
 #define _PERSON_H_
 #include <string>
+#include <vector>
 
 class Person {
     private:
@@ -17,7 +18,23 @@ class Person {
         void setEmail(std::string email);
 };
 
+class Librarian : public Person {
+    private:
+        int staffID;
+        int salary;
 
+    public:
+
+};
+
+
+class Member : public Person {
+    private:
+        int memberID;
+        std::vector<std::string> booksLoaned;
+
+
+};
 
 
 
