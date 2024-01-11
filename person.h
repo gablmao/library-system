@@ -15,12 +15,18 @@ TO DO:
 
 
 class Person {
-    private:
+    protected:
         string name;
         string address;
         string email;
 
     public:
+        Person(string name, string address, string email){
+            this->name = name;
+            this->address = address;
+            this->email = email;
+        }
+        
         string getName(){
             return name;
         };
@@ -52,11 +58,15 @@ class Librarian : public Person {
         int salary;
 
     public:
-        Librarian(int staffID, string name, string address,
+        Librarian(int staffID, string name, string address, 
         string email, int salary){
             this->staffID = staffID;
+            this->name = name;
+            this->address = address;
+            this->email = email;
             this->salary = salary;
-        };
+        }
+        
         void addMember(){
 
         };
@@ -73,7 +83,10 @@ class Librarian : public Person {
             
         };
 
-        void calcFine(int memberID);
+        void calcFine(int memberID){
+
+        };
+        
         int getStaffID(){
             return staffID;
         };
@@ -102,6 +115,7 @@ class Member : public Person {
         string email){
             this->memberID = memberID;
         };
+
         int getMemberID(){
             return memberID;
         };
@@ -126,7 +140,13 @@ class Book : public Librarian, public Member {
 
     public:
         Book(int bookID, string bookName, string authorFirstName,
-        string authorLastName);
+        string authorLastName){
+            this->bookID = bookID;
+            this->bookName = bookName;
+            this->authorFirstName = authorFirstName;
+            this->authorLastName = authorLastName;
+        };
+
         int getBookID(){
             return bookID;
         };
