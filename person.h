@@ -21,11 +21,7 @@ class Person {
         string email;
 
     public:
-        Person(string name, string address, string email){
-            this->name = name;
-            this->address = address;
-            this->email = email;
-        }
+        Person(string name, string address, string email);
         
         string getName(){
             return name;
@@ -58,14 +54,10 @@ class Librarian : public Person {
         int salary;
 
     public:
-        Librarian(int staffID, string name, string address, 
-        string email, int salary){
-            this->staffID = staffID;
-            this->name = name;
-            this->address = address;
-            this->email = email;
-            this->salary = salary;
-        }
+        Librarian(int staffID, const std::string& name, const std::string& address,
+               const std::string& email, int salary)
+        : Person(name, address, email), staffID(staffID), salary(salary) {
+    }
         
         void addMember(){
 
@@ -111,10 +103,9 @@ class Member : public Person {
         vector<Book> booksLoaned;
 
     public:
-        Member(int memberID, string name, string address,
-        string email){
-            this->memberID = memberID;
-        };
+        Member(int memberID, const std::string& name, const std::string& address, const std::string& email)
+        : Person(name, address, email), memberID(memberID) {
+    }
 
         int getMemberID(){
             return memberID;
@@ -139,13 +130,7 @@ class Book : public Librarian, public Member {
         Member borrower;
 
     public:
-        Book(int bookID, string bookName, string authorFirstName,
-        string authorLastName){
-            this->bookID = bookID;
-            this->bookName = bookName;
-            this->authorFirstName = authorFirstName;
-            this->authorLastName = authorLastName;
-        };
+        Book(int bookID);
 
         int getBookID(){
             return bookID;
